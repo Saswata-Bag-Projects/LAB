@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coal Mine Safety and Monitoring Car - Project Report</title>
+    <link rel="stylesheet" href="style.css">
     <style>
+        /* Background similar to index.html */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        h2 {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #d9e4f5, #f4f4f4);
             color: #333;
         }
-        p {
+
+        /* Main container styling */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        p, ul {
             color: #555;
         }
+
         ul {
             list-style-type: square;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+
         .image-container {
             text-align: center;
-            margin: 20px 0;
+            margin: 30px 0;
         }
+
         .image-container img {
-            width: 100%;
+            max-width: 100%;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #2c3e50;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Back Link */
         .back-link {
             display: block;
-            margin-top: 20px;
+            margin-top: 40px;
             text-align: center;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             color: #007bff;
             text-decoration: none;
         }
+
         .back-link:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="chetak.html">Chetak</a>
+        <a href="emg-wheelchair.html">EMG-Controlled Wheelchair</a>
+        <a href="smart-bin.html">Smart Bin</a>
+        <a href="ardui-no.html">Tetris on Arduino</a>
+    </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <h2 style="text-align: center; font-weight: bold;">CHETAK</h2>
+
         <div class="image-container">
-            <h2></h2>
             <img src="chetak.png" alt="Chetak Project Image">
         </div>
 
@@ -67,7 +112,7 @@
         <p>The project focuses on the development of cost-effective solutions to address safety challenges in coal mines. By integrating advanced sensors, communication systems, and real-time monitoring, the <strong>Coal Mine Safety and Monitoring Car</strong> ensures the safety and well-being of miners while maintaining economic viability.</p>
 
         <h2>Problem Statement</h2>
-        <p>Coal mining is one of the most hazardous industries, exposing workers to harmful gases like methane (CH4), carbon dioxide (CO2), and hydrogen (H2). Additionally, poor visibility, fire risks, and health concerns such as low SpO2 and abnormal blood pressure make traditional monitoring methods extremely dangerous. This project introduces an automated system that eliminates the need for miners to enter hazardous zones.</p>
+        <p>Coal mining is one of the most hazardous industries, exposing workers to harmful gases like methane (CH4), carbon dioxide (CO2), and hydrogen (H2). This project introduces an automated system that eliminates the need for miners to enter hazardous zones.</p>
 
         <h2>Key Features</h2>
         <ul>
@@ -102,9 +147,8 @@
         </ul>
 
         <h2>Achievements</h2>
-        <p><strong>This project has been awarded 1st prize in the Disaster Management category at the   
-Rajya Stariya Bal Vaigyanik Pradarshani.</strong></p>
-        
+        <p><strong>This project has been awarded 1st prize in the Disaster Management category at the Rajya Stariya Bal Vaigyanik Pradarshani.</strong></p>
+
         <h2>Patent Notice</h2>
         <p>This project is patented. Unauthorized reproduction, copying, or use of this design without proper authorization will be subject to legal action.</p>
 
@@ -117,4 +161,5 @@ Rajya Stariya Bal Vaigyanik Pradarshani.</strong></p>
     </div>
 
 </body>
+
 </html>
