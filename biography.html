@@ -4,128 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biography - Mr. Saswata Bag</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Biography - Saswata Bag</title>
     <style>
-        /* Page Styling */
+        /* Centering and Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #0b0f1a;
-            color: #ffffff;
+            background-color: #f4f4f4;
             display: flex;
-            justify-content: center; /* Center horizontally */
-            align-items: center;     /* Center vertically */
-            min-height: 100vh;       /* Full page height */
-            text-align: center;      /* Center text */
-            flex-direction: column;  /* Vertical stacking */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        header {
-            width: 100%;
-            padding: 20px 0;
-            background: #1c2541;
+        .container {
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
-        h1 {
-            color: #4cc9f0;
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
         }
 
-        nav ul {
-            padding: 0;
-            list-style-type: none;
+        p, ul {
+            text-align: justify;
+            line-height: 1.6;
         }
 
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
         }
 
-        nav ul li a {
+        a {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
             text-decoration: none;
-            color: #ffffff;
-            font-weight: bold;
-            transition: color 0.3s;
+            color: #3498db;
         }
 
-        nav ul li a:hover {
-            color: #4cc9f0;
-        }
-
-        /* Ensures sections stay in a single line */
-        main {
-            display: flex;
-            gap: 80px; /* Space between sections */
-        }
-
-        section {
-            display: inline-block; /* Keeps each section in a line */
-        }
-
-        footer {
-            margin-top: 40px;
-            background: #1c2541;
-            padding: 10px;
-            width: 100%;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Biography of Mr. Saswata Bag</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="biography.html">Biography</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="collaborators.html">Collaborators</a></li>
-                <li><a href="group-members.html">Group Members</a></li>
-                <li><a href="photo-gallery.html">Photo Gallery</a></li>
-                <li><a href="project-funding.html">Project Funding</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>Biography of Saswata Bag</h1>
+        <p><strong><b>An Innovator Specializing in Embedded Systems, IoT, and Environmental Monitoring Technologies.</b></strong></p>
 
-    <main>
         <!-- About Section -->
-        <section>
-            <h2>About Mr. Saswata Bag:</h2>
-            <p>A passionate innovator specializing in embedded systems, IoT, and bio-sensing technologies. His work in industrial safety and environmental monitoring has earned him multiple prestigious awards.</p>
-        </section>
+        <h2>About Me</h2>
+        <p>I am Saswata Bag, a passionate researcher and innovator with expertise in developing cutting-edge solutions for industrial safety and environmental monitoring. My work focuses on building smart systems using Arduino, IoT, and sensor technology to address real-world challenges.</p>
 
         <!-- Expertise Section -->
-        <section>
-            <h2>Expertise & Technical Skills:</h2>
-            <p>Embedded Systems (Arduino, ESP32, Raspberry Pi), IoT & Wireless Communication (GSM, GPS, RF Modules), Sensor Integration (MQ series, MAX30102, MG811), Hardware Prototyping, Programming (C, C++, Python), Data Logging & Analysis (SD Card Modules, RTC DS3231).</p>
-        </section>
+        <h2>Expertise & Technical Skills</h2>
+        <ul>
+            <li><strong>Embedded Systems:</strong> Arduino Uno, Mega, Nano, ESP32, and Raspberry Pi.</li>
+            <li><strong>IoT & Communication:</strong> GSM (SIM900A), GPS, RF modules, real-time alerts via SMS.</li>
+            <li><strong>Sensor Integration:</strong> Gas sensors (MQ-4, MQ-7, MQ-8, MG811), DHT11, MAX30102 (pulse oximeter).</li>
+            <li><strong>Programming:</strong> C, C++, Python for data processing and hardware control.</li>
+            <li><strong>Data Logging:</strong> RTC (DS3231) for real-time tracking and SD card modules for long-term data storage.</li>
+            <li><strong>System Prototyping:</strong> Hardware-software integration for real-time monitoring and control systems.</li>
+        </ul>
 
         <!-- Achievements Section -->
-        <section>
-            <h2>Achievements & Awards:</h2>
-            <p>1st Prize in Disaster Management (Rajya Stariya Bal Vaigyanik Pradarshani 2024), 1st Prize (Research & Industrial Conclave Integration '24 - RIC), 1st Prize (Environmental Hackathon 2024 - IIT Guwahati), Best Theme (India International Science Festival - IISF).</p>
-        </section>
+        <h2>Achievements & Awards</h2>
+        <ul>
+            <li>🏆 **1st Prize** – Disaster Management, Rajya Stariya Bal Vaigyanik Pradarshani.</li>
+            <li>🏆 **1st Prize** – Research & Industrial Conclave Integration '24 (RIC).</li>
+            <li>🏆 **1st Prize** – Environmental Hackathon 2024, IIT Guwahati (IITG).</li>
+            <li>🏆 **Best Theme** – India International Science Festival (IISF).</li>
+        </ul>
 
         <!-- Notable Projects Section -->
-        <section>
-            <h2>Notable Projects:</h2>
-            <p>Chetak (Smart Coal Mine Safety System), Smart Safety Helmet (Environmental Monitoring), EMG-Controlled Wheelchair (Hands-Free Mobility), Smart Bin (Automated Waste Management), Tetris on Arduino (LED-based Tetris Game).</p>
-        </section>
+        <h2>Notable Projects</h2>
+        <ul>
+            <li><strong>CHETAK:</strong> A smart coal mine safety system detecting hazardous gases with real-time alerts and data logging.</li>
+            <li><strong>Smart Safety Helmet:</strong> Monitors environmental conditions and provides automated emergency alerts for worker safety.</li>
+            <li><strong>EMG-Controlled Wheelchair:</strong> A hands-free mobility solution using electromyography sensors for disabled individuals.</li>
+            <li><strong>Smart Bin:</strong> An IoT-based waste management system that automates waste detection and sends alerts when full.</li>
+            <li><strong>Ardui No (Tetris):</strong> A fun and educational LED-based Tetris game on Arduino Mega.</li>
+        </ul>
+
+        <!-- Methodology Section -->
+        <h2>Methodology</h2>
+        <p>My approach involves in-depth research, sensor integration, real-time monitoring, and robust data communication. Each project is designed to deliver reliable performance through extensive testing in real-world conditions.</p>
+
+        <!-- Future Scope Section -->
+        <h2>Future Scope</h2>
+        <ul>
+            <li>🔍 Integrating AI-driven predictive analytics for hazard detection.</li>
+            <li>📡 Expanding wireless communication for broader monitoring areas.</li>
+            <li>🌐 Implementing real-time video monitoring in hazardous zones.</li>
+            <li>⚙️ Designing scalable solutions for industrial safety and smart infrastructure.</li>
+        </ul>
 
         <!-- Contact Section -->
-        <section>
-            <h2>Contact Information:</h2>
-            <p>Email: saswatabag@example.com | Phone: 8811960068 | Location: IIT Guwahati.</p>
-        </section>
-    </main>
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> saswatabag@example.com</p>
+        <p><strong>Phone:</strong> 8811960068</p>
+        <p><strong>Location:</strong> IIT Guwahati</p>
 
-    <footer>
-        <p>© 2025 Dr. Subhendu Sekhar Bag | All Rights Reserved</p>
-    </footer>
+        <a href="index.html">Back to Home</a>
+    </div>
 
 </body>
 
