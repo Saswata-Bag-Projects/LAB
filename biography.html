@@ -15,13 +15,11 @@
             background: #0b0f1a;
             color: #ffffff;
             display: flex;
-            justify-content: center; /* Centers horizontally */
-            align-items: center;     /* Centers vertically */
-            min-height: 100vh;       /* Full viewport height */
-            text-align: center;      /* Center-aligns text */
-            flex-direction: column;  /* Aligns content vertically */
-            overflow-x: auto;       /* Allows horizontal scrolling if needed */
-            white-space: nowrap;    /* Keeps all text in one line */
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            min-height: 100vh;       /* Full page height */
+            text-align: center;      /* Center text */
+            flex-direction: column;  /* Vertical stacking */
         }
 
         header {
@@ -30,9 +28,8 @@
             background: #1c2541;
         }
 
-        h1, h2 {
+        h1 {
             color: #4cc9f0;
-            display: inline; /* Ensures heading stays in line */
         }
 
         nav ul {
@@ -56,13 +53,14 @@
             color: #4cc9f0;
         }
 
+        /* Ensures sections stay in a single line */
         main {
-            display: inline; /* Makes all content stay in one line */
+            display: flex;
+            gap: 80px; /* Space between sections */
         }
 
         section {
-            display: inline; /* Ensures sections stay in line */
-            margin-right: 40px; /* Spacing between sections */
+            display: inline-block; /* Keeps each section in a line */
         }
 
         footer {
@@ -94,36 +92,39 @@
     </header>
 
     <main>
-
-        <section class="bio-intro">
+        <!-- About Section -->
+        <section>
             <h2>About Mr. Saswata Bag:</h2>
-            <p>Mr. Saswata Bag is a passionate innovator specializing in embedded systems, IoT, and bio-sensing technologies. His groundbreaking work in industrial safety and environmental monitoring has earned him multiple prestigious awards.</p>
+            <p>A passionate innovator specializing in embedded systems, IoT, and bio-sensing technologies. His work in industrial safety and environmental monitoring has earned him multiple prestigious awards.</p>
         </section>
 
-        <section class="expertise">
+        <!-- Expertise Section -->
+        <section>
             <h2>Expertise & Technical Skills:</h2>
             <p>Embedded Systems (Arduino, ESP32, Raspberry Pi), IoT & Wireless Communication (GSM, GPS, RF Modules), Sensor Integration (MQ series, MAX30102, MG811), Hardware Prototyping, Programming (C, C++, Python), Data Logging & Analysis (SD Card Modules, RTC DS3231).</p>
         </section>
 
-        <section class="achievements">
+        <!-- Achievements Section -->
+        <section>
             <h2>Achievements & Awards:</h2>
-            <p>1st Prize in Disaster Management - Rajya Stariya Bal Vaigyanik Pradarshani (2024), 1st Prize - Research & Industrial Conclave Integration '24 (RIC), 1st Prize - Environmental Hackathon 2024 at IIT Guwahati (IITG), Best Theme - India International Science Festival (IISF).</p>
+            <p>1st Prize in Disaster Management (Rajya Stariya Bal Vaigyanik Pradarshani 2024), 1st Prize (Research & Industrial Conclave Integration '24 - RIC), 1st Prize (Environmental Hackathon 2024 - IIT Guwahati), Best Theme (India International Science Festival - IISF).</p>
         </section>
 
-        <section class="notable-projects">
+        <!-- Notable Projects Section -->
+        <section>
             <h2>Notable Projects:</h2>
             <p>Chetak (Smart Coal Mine Safety System), Smart Safety Helmet (Environmental Monitoring), EMG-Controlled Wheelchair (Hands-Free Mobility), Smart Bin (Automated Waste Management), Tetris on Arduino (LED-based Tetris Game).</p>
         </section>
 
-        <section class="contact">
+        <!-- Contact Section -->
+        <section>
             <h2>Contact Information:</h2>
             <p>Email: saswatabag@example.com | Phone: 8811960068 | Location: IIT Guwahati.</p>
         </section>
-
     </main>
 
     <footer>
-        <p>© 2025 Saswata Bag | All Rights Reserved</p>
+        <p>© 2025 Dr. Subhendu Sekhar Bag | All Rights Reserved</p>
     </footer>
 
 </body>
