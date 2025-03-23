@@ -7,18 +7,23 @@
     <title>Biography - Mr. Saswata Bag</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Basic Styling */
+        /* Page Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: #0b0f1a;
             color: #ffffff;
-            text-align: center; /* Centers all the content */
-            line-height: 1.8;
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            min-height: 100vh;       /* Full viewport height */
+            text-align: center;      /* Center-aligns text */
+            flex-direction: column;  /* Aligns content vertically */
         }
 
         header {
+            width: 100%;
             padding: 20px 0;
             background: #1c2541;
         }
@@ -49,13 +54,12 @@
         }
 
         main {
-            padding: 40px 10px;
-            max-width: 900px;
-            margin: auto; /* Centers the main section */
+            max-width: 900px; /* Content width limit */
+            margin-top: 30px; /* Space between navbar and content */
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 40px; /* Space between sections */
         }
 
         ul {
@@ -68,8 +72,10 @@
         }
 
         footer {
-            padding: 20px;
+            margin-top: 40px;
             background: #1c2541;
+            padding: 10px;
+            width: 100%;
         }
     </style>
 </head>
@@ -98,9 +104,8 @@
         <section class="bio-intro">
             <h2>About Mr. Saswata Bag</h2>
             <p>
-                Mr. Saswata Bag is an innovative technologist and researcher specializing in **embedded systems**, **IoT**, and **bio-sensing technologies**. 
-                With a deep-rooted passion for problem-solving, he has successfully led numerous award-winning projects aimed at improving industrial 
-                safety and environmental sustainability.
+                Mr. Saswata Bag is a passionate innovator specializing in **embedded systems**, **IoT**, and **bio-sensing** technologies. 
+                His groundbreaking work in **industrial safety** and **environmental monitoring** has earned him multiple prestigious awards.
             </p>
         </section>
 
@@ -109,21 +114,20 @@
             <ul>
                 <li>🚀 **Embedded Systems**: Arduino, ESP32, Raspberry Pi</li>
                 <li>📡 **IoT & Wireless Communication**: GSM, GPS, RF Modules</li>
-                <li>🧪 **Sensor Integration**: Gas Sensors (MQ series, MG811), Pulse Oximeters (MAX30102), EMG sensors</li>
-                <li>🔧 **Hardware Prototyping**: Circuit design, PCB prototyping, and system integration</li>
-                <li>💻 **Programming**: C, C++, Python (for embedded systems and data analysis)</li>
-                <li>🔍 **Research Areas**: Smart Safety Devices, Bio-sensing, Environmental Monitoring</li>
-                <li>📊 **Data Logging & Analysis**: SD Card Modules, RTC (DS3231) Integration</li>
+                <li>🧪 **Sensor Integration**: Gas Sensors (MQ series, MG811), Pulse Oximeters (MAX30102)</li>
+                <li>🔧 **Hardware Prototyping**: Circuit design, PCB prototyping</li>
+                <li>💻 **Programming**: C, C++, Python (for embedded systems)</li>
+                <li>📊 **Data Logging & Analysis**: SD Card Modules, RTC (DS3231)</li>
             </ul>
         </section>
 
         <section class="achievements">
             <h2>🏆 Achievements & Awards</h2>
             <ul>
-                <li>🥇 **1st Prize in Disaster Management** - Rajya Stariya Bal Vaigyanik Pradarshani (2024)</li>
-                <li>🥇 **1st Prize - Research & Industrial Conclave Integration '24 (RIC)**</li>
-                <li>🥇 **1st Prize - Environmental Hackathon 2024** at IIT Guwahati (IITG)</li>
-                <li>🏅 **Best Theme Award** at India International Science Festival (IISF)</li>
+                <li>🥇 **1st Prize in Disaster Management** – Rajya Stariya Bal Vaigyanik Pradarshani (2024)</li>
+                <li>🥇 **1st Prize** – Research & Industrial Conclave Integration '24 (RIC)</li>
+                <li>🥇 **1st Prize** – Environmental Hackathon 2024 at IIT Guwahati (IITG)</li>
+                <li>🏅 **Best Theme** – India International Science Festival (IISF)</li>
             </ul>
         </section>
 
@@ -132,28 +136,27 @@
 
             <h3>1. Chetak – Smart Coal Mine Safety System</h3>
             <p>
-                A robust monitoring and alert system designed for **coal mines**, incorporating real-time gas detection (Methane, CO, CO₂, Hydrogen), 
-                temperature monitoring, and data logging. This project enhances worker safety and automates emergency alerts.
+                An advanced monitoring system for **coal mines** integrating real-time gas detection, temperature monitoring, and automated alerts.
             </p>
 
             <h3>2. Smart Safety Helmet</h3>
             <p>
-                An advanced helmet with real-time **shock detection** and environmental monitoring to protect workers in hazardous environments.
+                A safety-enhancing helmet with **shock detection** and environmental monitoring for hazardous work environments.
             </p>
 
             <h3>3. EMG-Controlled Wheelchair</h3>
             <p>
-                A mobility-assist device that interprets **EMG (Electromyography)** signals for hands-free control, empowering individuals with physical disabilities.
+                A mobility aid using **EMG signals** to provide hands-free control for physically challenged individuals.
             </p>
 
             <h3>4. Smart Bin</h3>
             <p>
-                An IoT-based **automated waste management system** that detects bin capacity and sends SMS alerts when the bin is full, optimizing waste collection.
+                An IoT-based **waste management system** that automatically detects bin fullness and sends SMS alerts for collection.
             </p>
 
             <h3>5. Tetris on Arduino (Ardui No)</h3>
             <p>
-                A creative recreation of the classic **Tetris game** using LED strips, a joystick, and an Arduino Mega.
+                A recreation of the classic **Tetris game** using LED strips and an Arduino Mega.
             </p>
 
         </section>
@@ -161,7 +164,7 @@
         <section class="contact">
             <h2>📞 Contact Information</h2>
             <p>
-                If you're interested in collaboration, research opportunities, or learning more about my work, feel free to connect:
+                For research collaboration and inquiries, reach out to me:
             </p>
             <ul>
                 <li>📧 **Email**: saswatabag@example.com</li>
@@ -173,7 +176,7 @@
     </main>
 
     <footer>
-        <p>© 2025 Dr. Subhendu Sekhar Bag | All Rights Reserved</p>
+        <p>© 2025 Saswata Bag | All Rights Reserved</p>
     </footer>
 
 </body>
