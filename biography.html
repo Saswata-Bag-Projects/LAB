@@ -20,6 +20,8 @@
             min-height: 100vh;       /* Full viewport height */
             text-align: center;      /* Center-aligns text */
             flex-direction: column;  /* Aligns content vertically */
+            overflow-x: auto;       /* Allows horizontal scrolling if needed */
+            white-space: nowrap;    /* Keeps all text in one line */
         }
 
         header {
@@ -30,6 +32,7 @@
 
         h1, h2 {
             color: #4cc9f0;
+            display: inline; /* Ensures heading stays in line */
         }
 
         nav ul {
@@ -54,21 +57,12 @@
         }
 
         main {
-            max-width: 900px; /* Content width limit */
-            margin-top: 30px; /* Space between navbar and content */
+            display: inline; /* Makes all content stay in one line */
         }
 
         section {
-            margin-bottom: 40px; /* Space between sections */
-        }
-
-        ul {
-            padding: 0;
-            list-style: none; /* Removes bullet points */
-        }
-
-        li {
-            margin: 10px 0;
+            display: inline; /* Ensures sections stay in line */
+            margin-right: 40px; /* Spacing between sections */
         }
 
         footer {
@@ -102,75 +96,28 @@
     <main>
 
         <section class="bio-intro">
-            <h2>About Mr. Saswata Bag</h2>
-            <p>
-                Mr. Saswata Bag is a passionate innovator specializing in **embedded systems**, **IoT**, and **bio-sensing** technologies. 
-                His groundbreaking work in **industrial safety** and **environmental monitoring** has earned him multiple prestigious awards.
-            </p>
+            <h2>About Mr. Saswata Bag:</h2>
+            <p>Mr. Saswata Bag is a passionate innovator specializing in embedded systems, IoT, and bio-sensing technologies. His groundbreaking work in industrial safety and environmental monitoring has earned him multiple prestigious awards.</p>
         </section>
 
         <section class="expertise">
-            <h2>Expertise & Technical Skills</h2>
-            <ul>
-                <li>🚀 **Embedded Systems**: Arduino, ESP32, Raspberry Pi</li>
-                <li>📡 **IoT & Wireless Communication**: GSM, GPS, RF Modules</li>
-                <li>🧪 **Sensor Integration**: Gas Sensors (MQ series, MG811), Pulse Oximeters (MAX30102)</li>
-                <li>🔧 **Hardware Prototyping**: Circuit design, PCB prototyping</li>
-                <li>💻 **Programming**: C, C++, Python (for embedded systems)</li>
-                <li>📊 **Data Logging & Analysis**: SD Card Modules, RTC (DS3231)</li>
-            </ul>
+            <h2>Expertise & Technical Skills:</h2>
+            <p>Embedded Systems (Arduino, ESP32, Raspberry Pi), IoT & Wireless Communication (GSM, GPS, RF Modules), Sensor Integration (MQ series, MAX30102, MG811), Hardware Prototyping, Programming (C, C++, Python), Data Logging & Analysis (SD Card Modules, RTC DS3231).</p>
         </section>
 
         <section class="achievements">
-            <h2>🏆 Achievements & Awards</h2>
-            <ul>
-                <li>🥇 **1st Prize in Disaster Management** – Rajya Stariya Bal Vaigyanik Pradarshani (2024)</li>
-                <li>🥇 **1st Prize** – Research & Industrial Conclave Integration '24 (RIC)</li>
-                <li>🥇 **1st Prize** – Environmental Hackathon 2024 at IIT Guwahati (IITG)</li>
-                <li>🏅 **Best Theme** – India International Science Festival (IISF)</li>
-            </ul>
+            <h2>Achievements & Awards:</h2>
+            <p>1st Prize in Disaster Management - Rajya Stariya Bal Vaigyanik Pradarshani (2024), 1st Prize - Research & Industrial Conclave Integration '24 (RIC), 1st Prize - Environmental Hackathon 2024 at IIT Guwahati (IITG), Best Theme - India International Science Festival (IISF).</p>
         </section>
 
         <section class="notable-projects">
-            <h2>🔬 Notable Projects</h2>
-
-            <h3>1. Chetak – Smart Coal Mine Safety System</h3>
-            <p>
-                An advanced monitoring system for **coal mines** integrating real-time gas detection, temperature monitoring, and automated alerts.
-            </p>
-
-            <h3>2. Smart Safety Helmet</h3>
-            <p>
-                A safety-enhancing helmet with **shock detection** and environmental monitoring for hazardous work environments.
-            </p>
-
-            <h3>3. EMG-Controlled Wheelchair</h3>
-            <p>
-                A mobility aid using **EMG signals** to provide hands-free control for physically challenged individuals.
-            </p>
-
-            <h3>4. Smart Bin</h3>
-            <p>
-                An IoT-based **waste management system** that automatically detects bin fullness and sends SMS alerts for collection.
-            </p>
-
-            <h3>5. Tetris on Arduino (Ardui No)</h3>
-            <p>
-                A recreation of the classic **Tetris game** using LED strips and an Arduino Mega.
-            </p>
-
+            <h2>Notable Projects:</h2>
+            <p>Chetak (Smart Coal Mine Safety System), Smart Safety Helmet (Environmental Monitoring), EMG-Controlled Wheelchair (Hands-Free Mobility), Smart Bin (Automated Waste Management), Tetris on Arduino (LED-based Tetris Game).</p>
         </section>
 
         <section class="contact">
-            <h2>📞 Contact Information</h2>
-            <p>
-                For research collaboration and inquiries, reach out to me:
-            </p>
-            <ul>
-                <li>📧 **Email**: saswatabag@example.com</li>
-                <li>📞 **Phone**: 8811960068</li>
-                <li>📍 **Location**: IIT Guwahati</li>
-            </ul>
+            <h2>Contact Information:</h2>
+            <p>Email: saswatabag@example.com | Phone: 8811960068 | Location: IIT Guwahati.</p>
         </section>
 
     </main>
